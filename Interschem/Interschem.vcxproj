@@ -188,11 +188,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="arb.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ConnectionLine.cpp" />
+    <ClCompile Include="DragableShape.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="tinyexpr.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="arb.h" />
+    <None Include="tinyexpr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button.hpp" />
+    <ClInclude Include="ConnectionLine.hpp" />
+    <ClInclude Include="DraggableShape.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
