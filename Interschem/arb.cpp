@@ -61,7 +61,7 @@ void drawTree(sf::RenderWindow& window, Node* root, float x, float y, float xOff
     if (root == nullptr) return;
 
     sf::CircleShape circle(20);
-    circle.setFillColor(sf::Color::Green);
+    circle.setFillColor(sf::Color::Blue);
     circle.setPosition(x - 20, y - 20);
 
     sf::Text text(root->value, font, 20);

@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cristi\\source\\repos\\Interschem1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DragableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\tinyexpr.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\tinyexpr.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp",
+              "RelativeDocumentMoniker": "Interschem\\main.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp",
+              "RelativeToolTip": "Interschem\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T14:33:29.403Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Button.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
+              "RelativeDocumentMoniker": "Interschem\\Button.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
+              "RelativeToolTip": "Interschem\\Button.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T13:57:28.652Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConnectionLine.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp",
+              "RelativeDocumentMoniker": "Interschem\\ConnectionLine.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp",
+              "RelativeToolTip": "Interschem\\ConnectionLine.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T13:58:34.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConnectionLine.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp",
+              "RelativeDocumentMoniker": "Interschem\\ConnectionLine.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp",
+              "RelativeToolTip": "Interschem\\ConnectionLine.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T13:58:27.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DraggableShape.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp",
+              "RelativeDocumentMoniker": "Interschem\\DraggableShape.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp",
+              "RelativeToolTip": "Interschem\\DraggableShape.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T13:58:02.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DragableShape.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp",
+              "RelativeDocumentMoniker": "Interschem\\DragableShape.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp",
+              "RelativeToolTip": "Interschem\\DragableShape.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T13:57:53.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Button.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
+              "RelativeDocumentMoniker": "Interschem\\Button.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
+              "RelativeToolTip": "Interschem\\Button.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T13:57:20.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tinyexpr.h",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.h",
+              "RelativeDocumentMoniker": "Interschem\\tinyexpr.h",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.h",
+              "RelativeToolTip": "Interschem\\tinyexpr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T13:28:37.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "tinyexpr.c",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.c",
+              "RelativeDocumentMoniker": "Interschem\\tinyexpr.c",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\tinyexpr.c",
+              "RelativeToolTip": "Interschem\\tinyexpr.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-09T13:28:18.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
