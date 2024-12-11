@@ -4,15 +4,20 @@
 #include <SFML/Graphics.hpp>
 #include "DraggableShape.hpp"
 
-class ConnectionLine {
-public:
+struct ConnectionLine {
     ConnectionLine(DraggableShape* s, int sa, DraggableShape* e, int ea);
 
     void update();
     bool involvesAnchor(DraggableShape* shape, int anchor) const;
-    sf::RectangleShape line;
 
-private:
+    sf::RectangleShape verticalLine1;
+    sf::RectangleShape horizontalLine;
+    sf::RectangleShape verticalLine2;
+    sf::ConvexShape arrowhead; // New arrowhead
+
+    static constexpr float LINE_THICKNESS = 4.f;
+    static constexpr float MIN_VERTICAL_GAP = 30.f;
+
     DraggableShape* startShape;
     int startAnchor;
     DraggableShape* endShape;

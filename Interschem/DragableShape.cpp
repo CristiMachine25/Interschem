@@ -141,6 +141,24 @@ int DraggableShape::getAnchorUnderMouse(const sf::Vector2i& mousePos) const {
     return -1;
 }
 
+bool DraggableShape::isIfBlock() const {
+    return shape.getFillColor() == sf::Color::Cyan;
+}
+
+int DraggableShape::getTrueAnchor() const {
+    if (isIfBlock()) {
+        return 1; // Right anchor index (true branch)
+    }
+    return -1;
+}
+
+int DraggableShape::getFalseAnchor() const {
+    if (isIfBlock()) {
+        return 2; // Left anchor index (false branch)
+    }
+    return -1;
+}
+
 sf::Vector2f DraggableShape::getAnchorPosition(int anchorIndex) const {
     if (anchorIndex < 0 || anchorIndex >= (int)anchors.size()) return { 0,0 };
     sf::FloatRect b = anchors[anchorIndex].getGlobalBounds();

@@ -1,11 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "CodCppPanel.hpp"
 #include "Button.hpp"
 #include "DraggableShape.hpp"
 #include "ConnectionLine.hpp"
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "Block Interface", sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(2000, 1700), "Block Interface", sf::Style::Close);
 
     sf::Font font;
     if (!font.loadFromFile("arial.ttf")) {
@@ -13,14 +14,21 @@ int main() {
         return -1;
     }
 
-    std::vector<std::string> buttonTexts = { "IF", "Int", "Afisare", "Start", "Stop" };
+    CodCppPanel codCppPanel;
+    codCppPanel.initialize(font, window.getSize().x, window.getSize().y);
+    sf::Color backgroundColor(60, 60, 60);
+    sf::RectangleShape topPanel(sf::Vector2f(window.getSize().x, 50));
+    topPanel.setFillColor(sf::Color(30, 30, 30));
+    sf::RectangleShape leftPanel(sf::Vector2f(200, window.getSize().y));
+    leftPanel.setFillColor(sf::Color(40, 40, 40));
 
+    std::vector<std::string> buttonTexts = { "IF", "Int", "Afisare", "Start", "Stop" };
     std::vector<Button> buttons;
-    float buttonWidth = 200.0f;
-    float buttonHeight = 50.0f;
-    float spacing = 20.0f;
-    float xStart = 100.0f;
-    float yStart = 100.0f;
+    float buttonWidth = 180.0f;
+    float buttonHeight = 40.0f;
+    float spacing = 10.0f;
+    float xStart = 10.0f;
+    float yStart = 60.0f;
 
     for (size_t i = 0; i < buttonTexts.size(); ++i) {
         buttons.emplace_back(font, buttonTexts[i], xStart, yStart + i * (buttonHeight + spacing), buttonWidth, buttonHeight);
@@ -35,7 +43,7 @@ int main() {
     std::vector<sf::Vector2f> rectPoints = { {0, 0}, {200, 0}, {200, 50}, {0, 50} };
     std::vector<sf::Vector2f> ifPoints = { {0,0}, {100,0}, {150,50}, {100,100}, {0,100}, {-50,50} };
 
-    Button rulareCodButton(font, "Rulare Cod", 20.0f, window.getSize().y - 70.0f, 200.0f, 50.0f);
+    Button rulareCodButton(font, "Run Code", 10.0f, window.getSize().y - 60.0f, 180.0f, 40.0f);
     Button* hoveredButton = nullptr;
 
     std::vector<ConnectionLine> lines;
@@ -77,7 +85,7 @@ int main() {
             if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
                 if (!isDrawingLine) {
                     if (hoveredButton == &rulareCodButton) {
-                        std::cout << "Rulare Cod button clicked!\n";
+                        std::cout << "Run Code button clicked!\n";
                     }
                     else if (hoveredButton) {
                         const std::string& btnText = hoveredButton->text.getString();
@@ -125,12 +133,10 @@ int main() {
                         shapes.push_back(newShape);
                     }
 
-                    // Check anchors
                     bool shapeClicked = false;
                     for (auto& shape : shapes) {
                         int anchorIndex = shape->getAnchorUnderMouse(mousePos);
                         if (anchorIndex >= 0) {
-                            // Check if anchor already connected
                             bool lineRemoved = false;
                             for (auto it = lines.begin(); it != lines.end(); ++it) {
                                 if (it->involvesAnchor(shape, anchorIndex)) {
@@ -164,7 +170,6 @@ int main() {
                     }
                 }
                 else {
-                    // Finishing line
                     bool lineFinished = false;
                     for (auto& shape : shapes) {
                         int anchorIndex = shape->getAnchorUnderMouse(mousePos);
@@ -181,11 +186,17 @@ int main() {
                 }
             }
 
+            if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
+                for (auto& shape : shapes) {
+                    shape->stopDrag();
+                }
+            }
+
             if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Right) {
-                // Remove shape if under mouse and associated lines
                 for (auto it = shapes.begin(); it != shapes.end(); ++it) {
                     DraggableShape* shape = *it;
                     if (shape->isMouseOver(mousePos)) {
+                        // Remove associated lines first
                         for (auto lineIt = lines.begin(); lineIt != lines.end();) {
                             if (lineIt->involvesAnchor(shape, 0) || lineIt->involvesAnchor(shape, 1) || lineIt->involvesAnchor(shape, 2)) {
                                 lineIt = lines.erase(lineIt);
@@ -194,32 +205,24 @@ int main() {
                                 ++lineIt;
                             }
                         }
+
+                        // Remove the shape itself
                         delete shape;
                         shapes.erase(it);
                         break;
                     }
                 }
             }
-
-            if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
-                for (auto& shape : shapes) {
-                    shape->stopDrag();
-                }
-            }
-
-            if (event.type == sf::Event::TextEntered) {
-                for (auto& shape : shapes) {
-                    shape->handleTextInput(event);
-                }
-            }
         }
 
-        // Update lines so they follow shapes
         for (auto& line : lines) {
             line.update();
         }
 
-        window.clear(sf::Color::White);
+        window.clear(backgroundColor);
+
+        window.draw(topPanel);
+        window.draw(leftPanel);
 
         for (const auto& button : buttons) {
             button.draw(window);
@@ -230,12 +233,21 @@ int main() {
         }
 
         for (auto& line : lines) {
-            window.draw(line.line);
+            if (line.verticalLine1.getSize().y > 0) {
+                window.draw(line.verticalLine1);
+            }
+            if (line.horizontalLine.getSize().x > 0) {
+                window.draw(line.horizontalLine);
+            }
+            if (line.verticalLine2.getSize().y > 0) {
+                window.draw(line.verticalLine2);
+            }
+            window.draw(line.arrowhead);
         }
 
         rulareCodButton.draw(window);
-
-        window.display();
+		codCppPanel.draw(window);
+        window.display();   
     }
 
     for (auto& shape : shapes) {
