@@ -189,13 +189,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CodCppPanel.hpp" />
     <ClCompile Include="ConnectionLine.cpp" />
     <ClCompile Include="DragableShape.cpp" />
+    <ClCompile Include="generated.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="tinyexpr.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="tinyexpr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.hpp" />
