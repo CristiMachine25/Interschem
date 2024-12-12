@@ -189,7 +189,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CodCppPanel.cpp" />
     <ClCompile Include="CodCppPanel.hpp" />
+    <ClCompile Include="CodeGenerator.cpp" />
     <ClCompile Include="ConnectionLine.cpp" />
     <ClCompile Include="DragableShape.cpp" />
     <ClCompile Include="generated.cpp" />
@@ -197,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.hpp" />
+    <ClInclude Include="CodeGenerator.hpp" />
     <ClInclude Include="ConnectionLine.hpp" />
     <ClInclude Include="DraggableShape.hpp" />
   </ItemGroup>

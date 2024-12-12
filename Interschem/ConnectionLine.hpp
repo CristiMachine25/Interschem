@@ -22,6 +22,11 @@ struct ConnectionLine {
     int startAnchor;
     DraggableShape* endShape;
     int endAnchor;
+
+    int getStartAnchor() const { return startAnchor; }
+    int getEndAnchor() const { return endAnchor; }
+    DraggableShape* getStartShape() const { return startShape; }
+    DraggableShape* getEndShape() const { return endShape; }
 };
 
 #endif
