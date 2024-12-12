@@ -12,6 +12,9 @@ struct DraggableShape {
     void startDrag(const sf::Vector2i& mousePos);
     void drag(const sf::Vector2i& mousePos);
     void stopDrag();
+sf::Color getFillColor() const {
+    return shape.getFillColor();
+}
     void handleTextInput(const sf::Event& event);
     bool isMouseOver(const sf::Vector2i& mousePos) const;
     int getAnchorUnderMouse(const sf::Vector2i& mousePos) const;
