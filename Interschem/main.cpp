@@ -5,9 +5,32 @@
 #include "DraggableShape.hpp"
 #include "ConnectionLine.hpp"
 #include "CodeGenerator.hpp"
+#include <fstream>
+#include <cstdlib>
+
+void writeToFileAndCompile(const std::string& code) {
+    std::ofstream outFile("generated_code.cpp");
+    if (!outFile) {
+        std::cerr << "Error: Could not open file for writing!" << std::endl;
+        return;
+    }
+    outFile << code;
+    outFile.close();
+
+    std::cout << "Compiling the code..." << std::endl;
+    int compileResult = system("g++ generated_code.cpp -o generated_code");
+
+    if (compileResult != 0) {
+        std::cerr << "Compilation failed!" << std::endl;
+        return;
+    }
+
+    std::cout << "Execution result:" << std::endl;
+    system("generated_code");
+}
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(2000, 1700), "Block Interface", sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(2000, 1000), "Block Interface", sf::Style::Close);
 
     sf::Font font;
     if (!font.loadFromFile("arial.ttf")) {
@@ -87,6 +110,13 @@ int main() {
                 if (!isDrawingLine) {
                     if (hoveredButton == &rulareCodButton) {
                         std::cout << "Run Code button clicked!\n";
+
+                        // Generate code when "Run Code" button is clicked
+                        std::string code = generateCode(shapes, lines);
+                        codCppPanel.updateCode(code);  // Update the CodCppPanel with the generated code
+
+                        // Write code to a file, compile, and execute
+                        writeToFileAndCompile(code);
                     }
                     else if (hoveredButton) {
                         const std::string& btnText = hoveredButton->text.getString();
@@ -214,17 +244,12 @@ int main() {
                     }
                 }
             }
+
             if (event.type == sf::Event::TextEntered) {
                 for (auto& shape : shapes) {
                     if (shape->isSelected) { // Pass the text input only to the selected shape
                         shape->handleTextInput(event);
                     }
-                }
-            }
-            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                if (hoveredButton == &rulareCodButton) { // Check if "Rulare Cod" is clicked
-                    std::string code = generateCode(shapes, lines); // Generate the C++ code from shapes and lines
-                    codCppPanel.updateCode(code);                  // Update the CodCppPanel with the generated code
                 }
             }
         }
@@ -260,10 +285,9 @@ int main() {
         }
 
         rulareCodButton.draw(window);
-		codCppPanel.draw(window);
-        CodCppPanel codCppPanel;
-        codCppPanel.initialize(font, window.getSize().x, window.getSize().y);
-        window.display();   
+        codCppPanel.draw(window);
+
+        window.display();
     }
 
     for (auto& shape : shapes) {

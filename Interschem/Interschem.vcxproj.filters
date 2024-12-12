@@ -41,9 +41,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Button.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="DraggableShape.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -51,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="CodeGenerator.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

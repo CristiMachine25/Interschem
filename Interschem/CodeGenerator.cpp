@@ -4,9 +4,16 @@
 #include <sstream>                // For std::ostringstream
 #include <vector>                 // For std::vector
 #include <string>
+#include <fstream>
+#include <cstdlib>
+#include <iostream>               // For std::cout and std::cerr
 
 std::string generateCode(const std::vector<DraggableShape*>& shapes, const std::vector<ConnectionLine>& lines) {
     std::ostringstream code;
+
+    // Add necessary includes and namespace
+    code << "#include <iostream>\n";
+    code << "using namespace std;\n\n";
 
     // Validation: Ensure there's exactly one Start and one Stop block
     DraggableShape* startBlock = nullptr;
@@ -33,8 +40,14 @@ std::string generateCode(const std::vector<DraggableShape*>& shapes, const std::
 
     // Traverse blocks following connections
     while (currentShape) {
-        if (currentShape->getFillColor() == sf::Color::Blue) { // Int block
-            code << "    int " << currentShape->userInput << ";\n";
+        if (currentShape->getFillColor() == sf::Color::Blue) { // Input block
+            // Check if the input block has a variable name and if it should be initialized
+            if (!currentShape->userInput.empty()) {
+                // Declare the variable
+                code << "    int " << currentShape->userInput << ";\n";
+                // Add cin for input
+                code << "    cin >> " << currentShape->userInput << ";\n";
+            }
         }
         else if (currentShape->getFillColor() == sf::Color::Cyan) { // If block
             code << "    if (" << currentShape->userInput << ") {\n";
@@ -72,7 +85,7 @@ std::string generateCode(const std::vector<DraggableShape*>& shapes, const std::
             currentShape = nullptr;
             continue;
         }
-        else if (currentShape->getFillColor() == sf::Color::Yellow) { // Afisare block
+        else if (currentShape->getFillColor() == sf::Color::Yellow) { // Output block
             code << "    std::cout << " << currentShape->userInput << ";\n";
         }
         else if (currentShape->getFillColor() == sf::Color::Red) { // Stop block
