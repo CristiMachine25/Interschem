@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\cristi\\source\\repos\\Interschem1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\CodeGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Evaluation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Evaluation.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DraggableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\CodeGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\CodeGenerator.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,32 +47,12 @@
       "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\CodCppPanel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\CodeGenerator.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DraggableShape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\DragableShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\ConnectionLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{695A58A4-7D0C-4A67-A783-E63D9FC7420E}|Interschem\\Interschem.vcxproj|solutionrelative:Interschem\\Button.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,19 +62,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp",
               "RelativeDocumentMoniker": "Interschem\\main.cpp",
               "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\main.cpp",
               "RelativeToolTip": "Interschem\\main.cpp",
-              "ViewState": "AgIAAKUAAAAAMjMzMzMBwNQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABACAAAAAAAAAADwvzMCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-02T14:33:29.403Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Evaluation.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.cpp",
+              "RelativeDocumentMoniker": "Interschem\\Evaluation.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.cpp",
+              "RelativeToolTip": "Interschem\\Evaluation.cpp",
+              "ViewState": "AgIAAMAAAADAzczMzIwlwOAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T08:23:07.108Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -80,67 +102,24 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CodCppPanel.cpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.cpp",
-              "RelativeDocumentMoniker": "Interschem\\CodCppPanel.cpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.cpp",
-              "RelativeToolTip": "Interschem\\CodCppPanel.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-12T13:13:37.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CodCppPanel.hpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.hpp",
-              "RelativeDocumentMoniker": "Interschem\\CodCppPanel.hpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.hpp",
-              "RelativeToolTip": "Interschem\\CodCppPanel.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Evaluation.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.hpp",
+              "RelativeDocumentMoniker": "Interschem\\Evaluation.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Evaluation.hpp",
+              "RelativeToolTip": "Interschem\\Evaluation.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-11T11:17:07.166Z",
+              "WhenOpened": "2025-01-08T08:23:21.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Button.hpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
-              "RelativeDocumentMoniker": "Interschem\\Button.hpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
-              "RelativeToolTip": "Interschem\\Button.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T13:57:28.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CodeGenerator.cpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp",
-              "RelativeDocumentMoniker": "Interschem\\CodeGenerator.cpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp",
-              "RelativeToolTip": "Interschem\\CodeGenerator.cpp",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwC0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-12T12:36:22.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CodeGenerator.hpp",
               "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.hpp",
               "RelativeDocumentMoniker": "Interschem\\CodeGenerator.hpp",
@@ -148,65 +127,126 @@
               "RelativeToolTip": "Interschem\\CodeGenerator.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-12T12:36:10.563Z"
+              "WhenOpened": "2024-12-12T12:36:10.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Button.cpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
-              "RelativeDocumentMoniker": "Interschem\\Button.cpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
-              "RelativeToolTip": "Interschem\\Button.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "CodeGenerator.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp",
+              "RelativeDocumentMoniker": "Interschem\\CodeGenerator.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodeGenerator.cpp",
+              "RelativeToolTip": "Interschem\\CodeGenerator.cpp",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv3kAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T13:57:20.689Z"
+              "WhenOpened": "2024-12-12T12:36:22.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "ConnectionLine.cpp",
               "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp",
               "RelativeDocumentMoniker": "Interschem\\ConnectionLine.cpp",
               "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.cpp",
               "RelativeToolTip": "Interschem\\ConnectionLine.cpp",
-              "ViewState": "AgIAACsAAAAABAAAAAARwD4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv3IAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T13:58:34.551Z"
+              "WhenOpened": "2024-12-09T13:58:34.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ConnectionLine.hpp",
               "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp",
               "RelativeDocumentMoniker": "Interschem\\ConnectionLine.hpp",
               "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\ConnectionLine.hpp",
               "RelativeToolTip": "Interschem\\ConnectionLine.hpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-09T13:58:27.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "DraggableShape.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.cpp",
+              "RelativeDocumentMoniker": "Interschem\\DraggableShape.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.cpp",
+              "RelativeToolTip": "Interschem\\DraggableShape.cpp",
+              "ViewState": "AgIAAJ4AAAAAAAAAAADwv8EAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T13:57:53.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DraggableShape.hpp",
               "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp",
               "RelativeDocumentMoniker": "Interschem\\DraggableShape.hpp",
               "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DraggableShape.hpp",
               "RelativeToolTip": "Interschem\\DraggableShape.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvzgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-09T13:58:02.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DragableShape.cpp",
-              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp",
-              "RelativeDocumentMoniker": "Interschem\\DragableShape.cpp",
-              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\DragableShape.cpp",
-              "RelativeToolTip": "Interschem\\DragableShape.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf3
+              "DocumentIndex": 9,
+              "Title": "CodCppPanel.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.cpp",
+              "RelativeDocumentMoniker": "Interschem\\CodCppPanel.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.cpp",
+              "RelativeToolTip": "Interschem\\CodCppPanel.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-12T13:13:37.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CodCppPanel.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.hpp",
+              "RelativeDocumentMoniker": "Interschem\\CodCppPanel.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\CodCppPanel.hpp",
+              "RelativeToolTip": "Interschem\\CodCppPanel.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T11:17:07.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Button.cpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
+              "RelativeDocumentMoniker": "Interschem\\Button.cpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.cpp",
+              "RelativeToolTip": "Interschem\\Button.cpp",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T13:57:20.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Button.hpp",
+              "DocumentMoniker": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
+              "RelativeDocumentMoniker": "Interschem\\Button.hpp",
+              "ToolTip": "C:\\Users\\cristi\\source\\repos\\Interschem1\\Interschem\\Button.hpp",
+              "RelativeToolTip": "Interschem\\Button.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T13:57:28.652Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

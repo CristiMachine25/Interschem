@@ -1,97 +1,122 @@
 #include "CodeGenerator.hpp"
-#include "DraggableShape.hpp"      // For DraggableShape
-#include "ConnectionLine.hpp"     // For ConnectionLine
-#include <sstream>                // For std::ostringstream
-#include <vector>                 // For std::vector
+#include "DraggableShape.hpp"
+#include "ConnectionLine.hpp"
+#include <sstream>
+#include <vector>
 #include <string>
 
-std::string generateCode(const std::vector<DraggableShape*>& shapes, const std::vector<ConnectionLine>& lines) {
-    std::ostringstream code;
+void generateBranchCode(std::ostringstream& code, DraggableShape* currentShape, const std::vector<ConnectionLine>& lines, int indentLevel, bool& hasReturn) {
+    std::string indent(indentLevel * 4, ' ');
 
-    // Validation: Ensure there's exactly one Start and one Stop block
-    DraggableShape* startBlock = nullptr;
-    DraggableShape* stopBlock = nullptr;
-
-    for (auto& shape : shapes) {
-        if (shape->getFillColor() == sf::Color::Green) { // Start block
-            if (startBlock) return "// Error: Multiple Start blocks found!";
-            startBlock = shape;
-        }
-        if (shape->getFillColor() == sf::Color::Red) { // Stop block
-            if (stopBlock) return "// Error: Multiple Stop blocks found!";
-            stopBlock = shape;
-        }
-    }
-
-    if (!startBlock) return "// Error: No Start block found!";
-    if (!stopBlock) return "// Error: No Stop block found!";
-
-    // Start code generation
-    code << "int main() {\n";
-
-    DraggableShape* currentShape = startBlock;
-
-    // Traverse blocks following connections
     while (currentShape) {
-        if (currentShape->getFillColor() == sf::Color::Blue) { // Int block
-            code << "    int " << currentShape->userInput << ";\n";
+        if (currentShape->getFillColor() == sf::Color::Yellow) { // Afisare block
+            code << indent << "std::cout << " << currentShape->userInput << ";\n";
         }
         else if (currentShape->getFillColor() == sf::Color::Cyan) { // If block
-            code << "    if (" << currentShape->userInput << ") {\n";
-
+            code << indent << "if (" << currentShape->userInput << ") {\n";
             DraggableShape* trueBranch = nullptr;
             DraggableShape* falseBranch = nullptr;
 
-            // Identify true (left) and false (right) branches
-            for (auto& line : lines) {
+            for (const auto& line : lines) {
                 if (line.getStartShape() == currentShape) {
-                    if (line.getStartAnchor() == currentShape->getTrueAnchor()) {
-                        trueBranch = line.getEndShape(); // Left branch is True
+                    if (line.getStartAnchor() == currentShape->getFalseAnchor()) { // Index 2 is for TRUE
+                        trueBranch = line.getEndShape();
                     }
-                    else if (line.getStartAnchor() == currentShape->getFalseAnchor()) {
-                        falseBranch = line.getEndShape(); // Right branch is False
+                    else if (line.getStartAnchor() == currentShape->getTrueAnchor()) { // Index 1 is for FALSE
+                        falseBranch = line.getEndShape();
                     }
                 }
             }
 
-            // Generate true branch (Left)
-            if (trueBranch) {
-                code << "        std::cout << " << trueBranch->userInput << ";\n";
-            }
+            generateBranchCode(code, trueBranch, lines, indentLevel + 1, hasReturn); // Generate code for TRUE branch
+            code << indent << "}";
 
-            code << "    } else {\n";
-
-            // Generate false branch (Right)
             if (falseBranch) {
-                code << "        std::cout << " << falseBranch->userInput << ";\n";
+                code << " else {\n";
+                generateBranchCode(code, falseBranch, lines, indentLevel + 1, hasReturn); // Generate code for FALSE branch
+                code << indent << "}";
             }
-
-            code << "    }\n";
-
-            // Stop processing further nodes after the branches
-            currentShape = nullptr;
-            continue;
-        }
-        else if (currentShape->getFillColor() == sf::Color::Yellow) { // Afisare block
-            code << "    std::cout << " << currentShape->userInput << ";\n";
+            code << "\n";
+            return; // Stop further processing of the current branch
         }
         else if (currentShape->getFillColor() == sf::Color::Red) { // Stop block
-            code << "    return 0;\n"; // Add return 0 for Stop block
-            break;
+            code << indent << "return 0;\n";
+            hasReturn = true;
+            return; // Stop processing after encountering a Stop block
+        }
+        else if (currentShape->getFillColor() == sf::Color::Blue) { // Int block
+            code << indent << "int " << currentShape->userInput << ";\n";
+            code << indent << "std::cin >> " << currentShape->userInput << ";\n";
         }
 
-        // Move to the next connected block
+        // Find the next shape in the sequence (for non-IF blocks)
         DraggableShape* nextShape = nullptr;
-        for (auto& line : lines) {
-            if (line.getStartShape() == currentShape) {
+        for (const auto& line : lines) {
+            if (line.getStartShape() == currentShape && !currentShape->isIfBlock()) {
                 nextShape = line.getEndShape();
                 break;
             }
         }
-
         currentShape = nextShape;
+    }
+}
+
+std::string generateCode(const std::vector<DraggableShape*>& shapes, const std::vector<ConnectionLine>& lines) {
+    std::ostringstream code;
+
+    // Reset the nextShape, trueShape, and falseShape pointers
+    for (auto* shape : shapes) {
+        shape->setNextShape(nullptr);
+        shape->setTrueShape(nullptr);
+        shape->setFalseShape(nullptr);
+    }
+
+    // Build the connections between shapes
+    for (const auto& line : lines) {
+        DraggableShape* startShape = line.getStartShape();
+        DraggableShape* endShape = line.getEndShape();
+        int startAnchor = line.getStartAnchor();
+
+        if (startShape->isIfBlock()) {
+            if (startAnchor == startShape->getFalseAnchor()) { // Index 2 is for TRUE
+                startShape->setTrueShape(endShape);
+            }
+            else if (startAnchor == startShape->getTrueAnchor()) { // Index 1 is for FALSE
+                startShape->setFalseShape(endShape);
+            }
+        }
+        else {
+            startShape->setNextShape(endShape);
+        }
+    }
+
+    // Find the Start block
+    DraggableShape* startBlock = nullptr;
+    for (auto* shape : shapes) {
+        if (shape->getFillColor() == sf::Color::Green) {
+            startBlock = shape;
+            break;
+        }
+    }
+
+    if (!startBlock) {
+        return "// Error: No Start block found!";
+    }
+
+    code << "#include <iostream>\n";
+    code << "int main() {\n";
+
+    bool hasReturn = false; // Flag to track if a return statement has been generated
+    generateBranchCode(code, startBlock, lines, 1, hasReturn);
+
+    // Add return 0; at the end if no Stop block was encountered
+    if (!hasReturn) {
+        code << "    return 0;\n";
     }
 
     code << "}\n";
+
+    return code.str();
+
     return code.str();
 }
