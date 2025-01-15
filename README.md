@@ -7,20 +7,8 @@ It was made with the help of my colleague, Florina Roman and with guidance from 
 
 Interschem is [more detailed description of the project, e.g., "a novel framework for defining and translating between various schema formats," "a versatile library for creating a unified semantic layer across disparate data sources," "an innovative language that expresses data relationships in a schema-agnostic way"].
 
-**Why use Interschem?**
-
-*   **Interoperability:** [Explain how it fosters interoperability, e.g., "Effortlessly translate data between JSON Schema, XML Schema, Avro, and more."]
-*   **Flexibility:** [Highlight its adaptable nature, e.g., "Adapt to evolving data standards with ease."]
-*   **Efficiency:** [Showcase its performance advantages, e.g., "Streamline data processing and reduce development time."]
-
 **Get Started**
 
 [Link to installation instructions or a quick start guide]
 
-**Contribute**
-
-[Link to contribution guidelines]
-
-**Explore the Documentation**
-
-[Link to comprehensive documentation]
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/b7306100-354b-4db0-bf11-2c99fd0868b5" />
