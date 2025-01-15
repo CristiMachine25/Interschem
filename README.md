@@ -1,6 +1,7 @@
 # Interschem
 
 In an increasingly interconnected world, the ability to seamlessly bridge different data schemas is crucial. Interschem emerges as a powerful [project type, e.g., "solution," "toolkit," "language"] that addresses this very challenge.
+It was made with the help of my colleague, Florina Roman and with guidance from Patruț Bogdan. We are both Students in the first year at Faculty of Informatics Iasi.
 
 **What is Interschem?**
 
